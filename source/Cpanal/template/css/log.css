@@ -1,0 +1,67 @@
+body{
+  background: #f1f1f1;
+  height: 100%;
+}
+#all{
+  width: 300px;
+  height: 376px;
+  margin: auto;
+  margin-top: 150px;
+}
+#log{
+
+  background-color: #FFf;
+  width: 300px;
+  height: 250px;
+  border:2px solid #DDD;
+  box-shadow: 2px 3px 11px #4b4b4b;
+}
+#log label, input {
+  display:block;
+  margin:10px;
+}
+#log input[type="text"],[type="password"]{
+  width: 250px;
+  height: 29px;
+}
+#log label{
+  font-size: 25px;
+  color: #757474;
+}
+#log input[type="submit"]{
+  width: 119px;
+  height: 35px;
+  background-color: #280080;
+  color: #fff;
+  font-size: large;
+  border: 1px solid #280080;
+}
+#log form input[type="text"]:focus,
+#log form input[type="password"]:focus{
+  border:2px solid #280080;
+}
+#cyic{
+  border-radius: 50%;
+  width: 130px;
+  height: 130px;
+  background-color: #5d0f6e;
+  margin: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+  margin-top: 12px;
+  margin-bottom: 16px;
+}
+#cyic h1 {
+  color:#fff;
+}
+
+#all #cyic h1 {
+    margin: 40px;
+    padding-top: 20px;
+    font-size: 68px;
+}
+#log form input[type="submit"]:last-child{
+  margin-left: 146px;
+  background-color: green;
+  margin-top: -45px;
+}

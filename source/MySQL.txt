@@ -1,0 +1,45 @@
+CREATE DATABASE newspaper3;
+USE newspaper3;
+CREATE TABLE editor(
+	id int(11) PRIMARY KEY AUTO_INCREMENT,
+	name varchar(20),
+	salary float
+);
+CREATE TABLE category(
+	id int(11) PRIMARY KEY AUTO_INCREMENT,
+	name varchar(20),
+	id_manager int(11),
+	foreign key (id_manager) REFERENCES editor(id)
+);
+CREATE TABLE works_on(
+	id_editor int(11),
+	id_category int(11),
+	FOREIGN KEY(id_editor) REFERENCES editor(id),
+	FOREIGN KEY(id_category) REFERENCES category(id),
+	PRIMARY KEY(id_editor, id_category)
+);
+CREATE TABLE news(
+	id int(11) PRIMARY KEY AUTO_INCREMENT,
+	title varchar(255),
+	content text,
+	id_editor int(11),
+	id_category int(11),
+	foreign key(id_editor) REFERENCES editor(id),
+	foreign key(id_category) REFERENCES category(id)
+);
+CREATE TABLE image_news(
+	id_news int(11),
+	image_name varchar(255),
+	FOREIGN KEY(id_news) REFERENCES news(id),
+	PRIMARY KEY(id_news, image_name)
+);
+CREATE TABLE login(
+	id_admin int(11),
+	username varchar(255),
+	pass varchar(255)
+);
+CREATE TABLE nav(
+	id int(11),
+	name varchar(255),
+	link varchar(255)
+);

@@ -1,0 +1,9 @@
+#wrapper {
+    width: 1020px;
+    height: auto;
+    margin: auto;
+    overflow: hidden;
+}
+#content {
+    min-height: 532px;
+}

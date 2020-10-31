@@ -1,0 +1,286 @@
+/*Start Global*/
+*
+{
+	margin:0;
+	padding:0;
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	box-sizing:border-box;
+}
+body
+{
+	font-family:Arial, Tahoma;
+	perspective:1000px;
+}
+.clearfix
+{
+	clear:both;
+}
+ul{
+	list-style:none;
+	padding:0;
+	margin:0;
+}
+/*End Global*/
+/*start Header*/
+h1:hover{
+	text-shadow: 2px 1px 1px #0b0101,
+				 3px 2px 1px #0b0101,
+				 4px 3px 1px #0b0101
+}
+.main{
+	background-color:#333;
+	color:#DDD;
+	padding:20px;
+	text-align:center
+}
+#navbar{
+	overflow: hidden;
+	background-color: #280080;
+	height: 40px;
+}
+
+#navbar ul li{
+    float: left;
+}
+#navbar ul li a{
+	display: block;
+	line-height: 20px;
+	font-family: tahoma;
+	font-size: 16px;
+	color: #fff;
+	text-decoration: none;
+	padding: 0px 10px;
+	float: left;
+	margin: 10px;
+	cursor: pointer;
+}
+#navbar ul li a:hover{
+    color:#2ce184;
+}
+/*End Header*/
+/*start main*/
+main p
+{
+	background-color:#EEE;
+	padding:10px
+}
+main
+{
+	text-align:center;
+}
+main p span
+{
+	font-weight:bold;
+	color:#666;
+}
+mark
+{
+	    color: #ac2323;
+	background-color:#;
+}
+/*End main*/
+/*start Article*/
+article header
+{
+	border-radius: 29px 29px 0 0;
+}
+
+article {
+    border-radius: 30px;
+	box-shadow: 4px 4px 8px 0px;
+}
+.post
+{
+	width:70%;
+	float:left;
+}
+.post article
+{
+	background-color:#F6f6f6;
+	border:1px solid #CCC;
+	margin:20px;
+
+}
+.post article header
+{
+	background-color:#E2E2E2;
+	padding:10px;
+}
+.post article section
+{
+	padding:10px;
+}
+.post article section details
+{
+	margin:10px 0;
+}
+.post article section .long-link
+{
+	width:200px;
+}
+.post article section code
+{
+	background-color:#FFF;
+	padding:10px;
+	display:block;
+	margin:10px 0;
+	border: 1px solid #CCC;
+	max-width:500px;
+
+}
+.post article section .codeing
+{
+	background-color:#FFF;
+	padding:10px;
+	margin-top:10px;
+	border:1px solid #DDD;
+	width:320px;
+	text-align:center;
+
+}
+.post article section .inputs input
+{
+	display:block;
+	margin-bottom:10px;
+
+}
+/*End Article*/
+/*Start Aside */
+aside
+{
+	float:right;
+	width:30%;
+}
+aside  section {
+	background-color:#EEE;
+	margin:20px 10px;
+	padding:10px;
+	border:solid 1px #CCC;
+	margin-bottom:20px;
+}
+aside  section h3 {
+	background-color:#D1D1D1;
+	padding:10px;
+	margin-bottom:10px;
+}
+
+aside  section ul li {
+	line-height:1.6;
+}
+.card{
+    width: 435.75px;
+    height: 325px;
+    margin: 10px;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: all 1s ease-in-out;
+}
+.card:hover{
+	transform:rotateY(180deg);
+}
+.card > div {
+	position: absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	background-color:#EEE;
+	border-radius:10px;
+	border:1px solid #CCC;
+	font-family:Arial;
+	text-align:center;
+	color:#777;
+}
+
+.card .front{
+	z-index:2;
+	backface-visibility:hidden;
+}
+.card .front header{
+	background-color:#444;
+	width:100%;
+	height:80px;
+	border-radius:10px 10px 0 0;
+	margin-bottom:40px;
+}
+.card .front img{
+    width: 100px;
+    height: 100px;
+    margin-top: 3px;
+    border-radius: 50%;
+	position:relative;
+	top:25px;
+
+}
+.card .front h3{
+    margin-bottom: 10px;
+    margin-top: 50px;
+}
+.card .front p{
+	line-height:1.7;
+}
+.card .front span{
+    display:inline-block;
+	margin-top:15px;
+	color:green;
+	font-weight:bold;
+}
+.card .back{
+	z-index:1;
+	transform:rotateY(180deg);
+}
+/*End Aside*/
+/*----------------------------------------------------------------------------*/
+
+#heart {
+  position: relative;
+  width: 100px;
+  height: 90px;
+  margin-left: 1274px;
+}
+#heart:before,
+#heart:after {
+  position: absolute;
+  content: "";
+  left: 50px;
+  top: 0;
+  width: 50px;
+  height: 80px;
+  background: red;
+  border-radius: 50px 50px 0 0;
+  transform: rotate(-45deg);
+  transform-origin: 0 100%;
+}
+#heart:after {
+  left: 0;
+  transform: rotate(45deg);
+  transform-origin: 100% 100%;
+}
+
+/*----------------------------------------------------------------------------*/
+/*Start Section #5 Images*/
+section img{
+ transition:all 1s ease-in-out;
+ transform: scale(1);
+}
+section img:hover{
+ transform: scale(2) rotate(360deg);
+ overflow: hidden;
+}
+.imagescale{
+	background-color:#00f;
+}
+.post article section .codeing .imagescale {
+    overflow: hidden;
+}
+/*End Section #5 Images*/
+/*Start Footer*/
+footer
+{
+	background-color:#333;
+	color:#DDD;
+	text-align:center;
+	padding:10px
+}
+/*End Footer*/

@@ -1,0 +1,131 @@
+#wrapper{
+    width:1000px;
+    height:auto;
+    margin: auto;
+    overflow: hidden;
+}
+#header{
+    width:100%;
+    height:90px;
+    background: #280080;
+}
+#header h1{
+    line-height: 90px;
+    font-family: tahoma;
+    font-size:24px;
+    color:#fff;
+    padding: 0 10px;
+    text-align: center;
+}
+#navbar{
+    width:100%;
+    height:40px;
+    background: #333;
+}
+#navbar ul li{
+    float: left;
+}
+#navbar ul li a{
+    display: block;
+    line-height: 40px;
+    font-family:tahoma;
+    font-size:16px;
+    color:#fff;
+    text-decoration: none;
+    padding: 0 10px;
+}
+#navbar ul li a:hover{
+    color:#2ce184;
+}
+#content{
+    width:100%;
+    height:auto;
+    overflow: hidden;
+    min-height: 500px;
+    background: #e3e3e3;
+    padding: 10px;
+}
+button {
+    margin: 10px;
+    width: 100px;
+    height: 40px;
+    background-color: #280080;
+    color: #FFF;
+    border: 1px solid #010101;
+    border-radius: 10%;
+}
+button a{color: #FFF;text-decoration: none;}
+#content form input,
+#content form label,
+#content form select,
+#content form textarea{
+    display: block;
+    margin: 5px;
+    width:90%;
+    border:none;
+    outline: none;
+    border-radius: 10px;
+}
+#content form input[type="text"], #content form select{
+    height:30px;
+    padding: 0 10px;
+    border:1px solid #d3d3d3;
+}
+#content form textarea{
+    height:120px;
+    padding: 0 10px;
+    border:1px solid #d3d3d3;
+}
+#content form input[type="text"]:focus,
+#content form select:focus,
+#content form textarea:focus{
+    border:2px solid #280080;
+}
+#content form input[type="submit"]{
+    width:auto;
+    padding: 10px;
+    border:none;
+    background: #280080;
+    color:#fff;
+    cursor: pointer;
+    border-radius: none;
+}
+#content form input[type="submit"]:hover{
+    background: #333;
+}
+#content table{
+    width:90%;
+}
+#content table tr th, tr td{
+    border:1px solid #333;
+}
+#content table tr th {
+    background: #280080;
+    height:30px;
+    text-align: center;
+    font-weight: bold;
+    color:#fff;
+    font-family: tahoma;
+    font-size:14px;
+}
+#content table tr td{
+    padding: 5px;
+}
+#content table tr:nth-child(even){
+    background: #d2e2e3;
+}
+#content table tr:nth-child(odd){
+    background: #e2d2e3;
+}
+#footer{
+    width:100%;
+    height:40px;
+    background: #333;
+}
+#footer p{
+    text-align: center;
+    line-height: 40px;
+    color:#fff;
+    font-family: tahoma;
+    font-size:12px;
+}

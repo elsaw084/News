@@ -1,0 +1,56 @@
+.post article .read{
+    min-height: 500px;
+}
+article.read {
+	min-height: 500px;
+}
+.post {
+    min-height: 525px;
+}
+/*----------------------------------------------------------------------------*/
+/*Mobile And Tablet*/
+@media(max-width:767px){
+	.post {
+    width: 100%;
+    float: left;
+  }
+  aside {
+    float: right;
+    width: 100%;
+	}
+	.post {
+	    min-height: 340px;
+	}
+}
+/*Small Screen*/
+@media(min-width:768px) and (max-width:991px){
+  .post {
+    width: 100%;
+    float: left;
+  }
+  aside {
+    float: right;
+    width: 100%;
+	}
+	.post {
+	    min-height: 280px;
+	}
+}
+/*Midium Screen*/
+@media(min-width:992px) and (max-width:1199px){
+
+}
+/*Large Screen*/
+@media(min-width:1200px){
+
+}
+.post article .read{
+    min-height: 500px;
+}
+
+article.read {
+	min-height: 500px;
+}
+.post {
+    min-height: 525px;
+}
